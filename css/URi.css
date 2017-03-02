@@ -8,7 +8,7 @@ body{
 #URichan{
   margin-top: 10em;
 margin-left: 5em;
-
+border-radius: 50%;
 }
 
 
@@ -39,9 +39,9 @@ margin-top: 150px;
   margin-left: 250px;
 }
 #balloon-4-bottom-right {
-	position: relative;
-  top: -300px;
-
+	position: absolute;;
+  top: 250px;
+  left: 500px;
 	display: inline-block;
 	padding: 0 15px;
 	width: 400px;
