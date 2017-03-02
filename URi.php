@@ -71,7 +71,5 @@ function checkStatus(){
   </div>
 
 
-
-
   </body>
 </html>
