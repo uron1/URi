@@ -17,7 +17,7 @@
     <link rel="shortcut icon" href="http://uron.webcrow.jp/pic/favicon.ico">
 
     <meta charset="utf-8">
-    <title>URi Git test by pyon</title>
+    <title>URi Git PYONSAMA</title>
     <script type="text/javascript">
 
 var xmlHttp;
