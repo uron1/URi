@@ -1,4 +1,4 @@
-var  serihu = [
+let  serihu = [
   ["こんにちわ,hello",
    "さようなら,ばいばい,バイバイ",
 
