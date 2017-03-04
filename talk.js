@@ -18,7 +18,7 @@
 
                       let rand = Math.floor( Math.random() * 2 ) ;
                     alert(answer[rand]);
-                    //ランダム
+                    //ランダム//テスト
 
                     }
                   }
