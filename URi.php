@@ -79,8 +79,8 @@ function checkStatus(){
                     var wordcheck = ary[a];
 alert(answer[a]);
                     if (text.indexOf(wordcheck) != -1) {
-                    //strにhogeを含む場合の処理
-                    alert(answer[a]);
+
+                    alert('一致しました');
 
 
                     }
