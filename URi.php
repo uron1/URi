@@ -77,7 +77,7 @@ function checkStatus(){
                   for (var a = 0; a < ary.length; a++) {
 
                     var wordcheck = ary[a];
-alert(answer[a]);
+
                     if (text.indexOf(wordcheck) != -1) {
 
                     alert('一致しました');
