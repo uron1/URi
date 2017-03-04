@@ -68,7 +68,7 @@ function checkStatus(){
 
       <div class="button" onclick="talk()">
         <script type="text/javascript" src="index.js"></script>
-   <script></script>
+
 
         <p>話しかける</p>
       </div>
