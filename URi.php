@@ -80,8 +80,10 @@ function checkStatus(){
 
                     if (text.indexOf(wordcheck) != -1) {
 
-                    alert('一致しました');
-
+            
+                      let rand = Math.floor( Math.random() * 2 ) ;
+                    alert(answer[rand]);
+                    //ランダム
 
                     }
                   }
