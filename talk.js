@@ -16,9 +16,9 @@
                     if (text.indexOf(wordcheck) != -1) {
 
 
-                      let rand = Math.floor( Math.random() * 2 ) ;
+                      let rand = Math.floor( Math.random() * answer.length ) ;
                     alert(answer[rand]);
-                    //ランダム//テスト
+                    //ランダム
 
                     }
                   }
