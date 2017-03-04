@@ -11,7 +11,7 @@
 
                   for (var a = 0; a < ary.length; a++) {
 
-                    var wordcheck = ary[a];
+                    let wordcheck = ary[a];
 
                     if (text.indexOf(wordcheck) != -1) {
 
