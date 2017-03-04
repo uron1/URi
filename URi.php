@@ -62,13 +62,15 @@ function checkStatus(){
         <textarea name="msg" cols=50 rows=30 id="textarea"></textarea>
 
 
+
         <script type="text/javascript" src="talk.js"></script>
+
 
 
 
       <div class="button" onclick="talk()">
         <script type="text/javascript" src="index.js"></script>
-
+   <script></script>
 
         <p>話しかける</p>
       </div>
