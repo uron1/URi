@@ -10,7 +10,7 @@
     <link rel="stylesheet" media="all" type="text/css" href="/URi/css/smartURi.css" />
     <link rel="shortcut icon" href="http://uron.webcrow.jp/pic/favicon.ico">
     <meta charset="utf-8">
-    <title>URi Git PYONSAMA</title>
+    <title>URi</title>
     <script type="text/javascript">
 var xmlHttp;
 
