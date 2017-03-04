@@ -50,6 +50,7 @@ function checkStatus(){
   </head>
   <body>
     <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="serihu.js"></script>
       <script type="text/javascript">
         loadText();
       </script>
@@ -61,7 +62,41 @@ function checkStatus(){
         <textarea name="msg" cols=50 rows=30 id="textarea"></textarea>
 
 
-      <div class="button">
+        <script type="text/javascript">
+
+        //ボタン押されたときの処理
+          function talk() {
+            // $("#textarea").val() テキストエリアの文字列取得
+            let text = $("#textarea").val();
+
+            for (var i = 0; i < serihu[0].length; i++) {
+              let ary = serihu[0][i].split(',');
+              let answer = serihu[1][i].split(',');
+
+
+                  for (var a = 0; a < ary.length; a++) {
+
+                    var wordcheck = ary[a];
+alert(answer[a]);
+                    if (text.indexOf(wordcheck) != -1) {
+                    //strにhogeを含む場合の処理
+                    alert(answer[a]);
+
+
+                    }
+                  }
+
+            }
+
+          }
+
+
+
+        </script>
+
+
+
+      <div class="button" onclick="talk()">
         <script type="text/javascript" src="index.js"></script>
    <script></script>
 
