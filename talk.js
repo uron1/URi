@@ -20,7 +20,9 @@
                   $("#balloon-4-bottom-right").text(answer[rand]);
                     //ランダム
 
-                    }
+                  }else{
+                      $("#balloon-4-bottom-right").text("何言ってんのかわかんない・・・");
+                  }
                   }
 
             }
