@@ -17,7 +17,7 @@
 
 
                       let rand = Math.floor( Math.random() * answer.length ) ;
-                    alert(answer[rand]);
+                  $("#balloon-4-bottom-right").text(answer[rand]);
                     //ランダム
 
                     }
