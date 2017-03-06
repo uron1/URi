@@ -1,30 +1,46 @@
 
         //ボタン押されたときの処理
           function talk() {
-            // $("#textarea").val() テキストエリアの文字列取得
-            let text = $("#textarea").val();
 
-            for (var i = 0; i < serihu[0].length; i++) {
-              let ary = serihu[0][i].split(',');
-              let answer = serihu[1][i].split(',');
+              const text = $("#textarea").val();//テキストエリアの文字列取得
 
-
-                  for (var a = 0; a < ary.length; a++) {
-
-                    let wordcheck = ary[a];
-
-                    if (text.indexOf(wordcheck) != -1) {
-
-
-                      let rand = Math.floor( Math.random() * answer.length ) ;
-                  $("#balloon-4-bottom-right").text(answer[rand]);
-                    return;
-
-                  }else{
-                      $("#balloon-4-bottom-right").text("何言ってんのかわかんない・・・");
-                  }
-                  }
-
+              //特別な処理を必要とする文字列が入力された場合
+              if (text=== "こんにちわ" ||text=== "こんにちは") {
+                  changeText("こんにちわーーー！URiだよっ！仲良くしてねー");
+                  return;//出力後関数を抜ける
+            }else if(text=== "こんばんわ" ||text=== "こんばんは"){
+                  changeText("こんばんわ！URiだよっ！仲良くしてねー");
+                  return;
+            }else if(text=== "おはよう" ||text=== "おはよ！"){
+                  changeText("おはよう！URiだよっ！仲良くしてねー");
+                  return;
             }
 
+            //serihu.jsにある単語が入力されたとき
+            for (var i = 0; i < serihu[0].length; i++) {
+                const quesArray = serihu[0][i].split(',');//質問配列をカンマ区切りで配列に保存
+                const answerArray = serihu[1][i].split(',');//答え配列をカンマ区切りで配列に保存
+
+                for (var j = 0; j < quesArray.length; j++) {
+                    const wordcheck = quesArray[j];
+
+                    if (text.indexOf(wordcheck) != -1) {//入力文字列がserif.jsにある単語だったとき
+                        const rand = Math.floor( Math.random() * answerArray.length );
+                        changeText(answerArray[rand]);
+
+                        return;//出力後関数を抜ける
+                    }else{//入力文字列がserif.jsにない場合
+                      const nothingText = ["何言ってんのかわかんない・・・","違う話しよ！"];
+                      const rand = Math.floor( Math.random() * nothingText.length );
+                      changeText(nothingText[rand]);
+                      return;
+                      }
+                  }
+            }
+
+          }
+
+          //吹き出しの中の文字列書き換えjQuery使用
+          function changeText(outText){
+            $("#balloon-4-bottom-right").text(outText);
           }
