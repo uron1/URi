@@ -18,7 +18,7 @@
 
                       let rand = Math.floor( Math.random() * answer.length ) ;
                   $("#balloon-4-bottom-right").text(answer[rand]);
-                    //ランダム
+                    break;
 
                   }else{
                       $("#balloon-4-bottom-right").text("何言ってんのかわかんない・・・");
