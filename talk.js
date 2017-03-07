@@ -43,11 +43,11 @@ function talk() {
 
 
 /*************serihu.jsにある単語が入力されたとき ********/
-  for (var i = 0; i < serihu[0].length; i++) {
+  for (let i = 0; i < serihu[0].length; i++) {
       const quesArray = serihu[0][i].split(',');//質問配列をカンマ区切りで配列に保存
       const answerArray = serihu[1][i].split(',');//答え配列をカンマ区切りで配列に保存
 
-      for (var j = 0; j < quesArray.length; j++) {
+      for (let j = 0; j < quesArray.length; j++) {
           const wordcheck = quesArray[j];
 
           if (text.indexOf(wordcheck) != -1) {//入力文字列がserif.jsにある単語だったとき
